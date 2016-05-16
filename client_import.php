@@ -14,7 +14,7 @@ $config = [
 	'domain' => 'https://your-ubersmith-domain.com',
 	
 	// Path to Ubersmith API Client
-	'api_client_path' => __DIR__ .'/../api/class.uber_api_client.php',
+	'api_client_path' => __DIR__ .'/../api/client/2.0/php/class.uber_api_client.php',
 	
 	// API Username
 	'api_username' => 'API_USERNAME',
