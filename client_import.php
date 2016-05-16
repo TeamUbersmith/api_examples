@@ -152,6 +152,6 @@ try {
 	exit;
 }
 
-print 'Success: '. $count .' clients imported.';
+print 'Success: '. $count .' clients imported.'."\n";
 
 // end of script
