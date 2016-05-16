@@ -11,6 +11,7 @@ error_reporting(E_ALL);
 // Config
 $config = [
 	// Target Instance
+	// If this script will be executed on the same server, you can use 'http://localhost'
 	'domain' => 'https://your-ubersmith-domain.com',
 	
 	// Path to Ubersmith API Client
