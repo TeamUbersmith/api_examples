@@ -6,3 +6,6 @@ https://github.com/TeamUbersmith/api_documentation
 
 ## client_import.php
 Demonstration of initial import of clients into Ubersmith.
+
+## support_tickets.php
+Demonstration of mass modification of support tickets.
