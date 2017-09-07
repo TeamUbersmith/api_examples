@@ -4,6 +4,9 @@ API examples to show you how to get the most out of Ubersmith's API.
 Please see our full API documentation here for more details on methods and parameters:
 https://docs.ubersmith.com/display/UbersmithDocumentation/Using+the+Ubersmith+API
 
+## config.inc.php
+Configuration file for easily reusing API credentials. Modify this first.
+
 ## test.php
 Tests connection to the API endpoint.
 
