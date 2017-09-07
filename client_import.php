@@ -57,12 +57,12 @@ $api_client = new uber_api_client($config['domain'], $config['api_username'], $c
 // Get CSV contents (don't forget to set its newline format to Unix LF!)
 $csv = array_map('str_getcsv', file('customer_list.csv'));
 
+// Initialize counter and begin new line for status output
+$count = 0;
 print "\n";
 
 // Begin creating clients
 try {
-	$count = 0;
-	
 	foreach ($csv as $row) {
 		// Prepare Client data
 		$data = [

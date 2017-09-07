@@ -38,17 +38,17 @@ $config = array_merge($config, [
 require_once $config['api_client_path'];
 $api_client = new uber_api_client($config['domain'], $config['api_username'], $config['api_token']);
 
+// Initialize counter and begin new line for status output
+$count = 0;
 print "\n";
+
+// Begin targeting support tickets
 try {
 	// Retrieve list of tickets based on specified criteria
 	$tickets = $api_client->call('support.ticket_list', $config['params']['from']);
 	if (empty($tickets)) {
 		throw new Exception('No tickets found for the specified criteria.');
 	}
-	
-	// Initialize counter and begin new line for status output
-	$count = 0;
-	print "\n";
 	
 	// Loop through ticket list and apply modifications
 	foreach ($tickets as $ticket_id => $ticket) {
